@@ -1,0 +1,249 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #ffcccb);
+    display: flex;
+    flex-direction: column; /* Allow vertical stacking */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    min-height: 100vh; /* Ensure the body takes at least the full height */
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Container for Main Content */
+.container, #yesPage, #gallerySection {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto; /* Center horizontally */
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading */
+h1 {
+    color: #e75480;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+p {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    background-color: #e75480;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #d1426f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Gallery Button */
+.gallery-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    background-color: #e75480;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.gallery-button:hover {
+    background-color: #d1426f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+#gallerySection {
+    max-width: 800px;
+    overflow-y: auto; /* Make the gallery scrollable */
+    max-height: 80vh; /* Limit the height for mobile */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    aspect-ratio: 1 / 1; /* Ensure the cards are square */
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fill the card without distortion */
+}
+
+.gallery-card:hover {
+    transform: scale(1.05);
+}
+
+/* Yes Page */
+#yesPage {
+    max-width: 500px ;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .gallery-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Hearts Animation */
+@keyframes rainHearts {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: absolute;
+    top: -50px; /* Start above the viewport */
+    width: 50px; /* Size of the heart */
+    height: 50px; /* Size of the heart */
+    background: url('images/heart.png') no-repeat center center; /* Use a heart image */
+    background-size: contain;
+    animation: rainHearts linear infinite; /* Animation for falling */
+}
+
+/* Create multiple hearts */
+.heart:nth-child(1) { left: 10%; animation-duration: 4s; }
+.heart:nth-child(2) { left: 20%; animation-duration: 5s; }
+.heart:nth-child(3) { left: 30%; animation-duration: 6s; }
+.heart:nth-child(4) { left: 40%; animation-duration: 4.5s; }
+.heart:nth-child(5) { left: 50%; animation-duration: 5.5s; }
+.heart:nth-child(6) { left: 60%; animation-duration: 6.5s; }
+.heart:nth-child(7) { left: 70%; animation-duration: 4s; }
+.heart:nth-child(8) { left: 80%; animation-duration: 5s; }
+.heart:nth-child(9) { left: 90%; animation-duration: 6s; }
+
+@keyframes rainImage {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.falling-image {
+    position: absolute;
+    top: -50px; /* Start above the viewport */
+    width: 50px; /* Size of the falling image */
+    height: 50px; /* Size of the falling image */
+    background: url('images/head.png') no-repeat center center; /* Use your image */
+    background-size: contain;
+    animation: rainImage linear infinite; /* Animation for falling */
+}
+
+/* Create multiple falling images */
+.falling-image:nth-child(1) { left: 15%; animation-duration: 6s; }
+.falling-image:nth-child(2) { left: 25%; animation-duration: 5s; }
+.falling-image:nth-child(3) { left: 35%; animation-duration: 7s; }
+.falling-image:nth-child(4) { left: 45%; animation-duration: 4.5s; }
+.falling-image:nth-child(5) { left: 55%; animation-duration: 5.5s; }
