@@ -188,6 +188,27 @@ button:hover {
 }
 
 /* Hearts Animation */
+
+
+#background-music {
+    display: none; /* Hide the iframe */
+}
+
+.justified {
+    text-align: justify; /* Justify the text */
+}
+.heart {
+    position: absolute;
+    top: -50px; /* Start above the viewport */
+    width: 30px; /* Size of the heart */
+    height: 30px; /* Size of the heart */
+    background: url('images/heart.png') no-repeat center center; /* Use a heart image */
+    background-size: contain;
+    animation: rainHearts linear infinite; /* Animation for falling */
+    animation-duration: var(--duration, 4s); /* Use CSS variable for duration */
+}
+
+/* Keyframes for falling hearts */
 @keyframes rainHearts {
     0% {
         transform: translateY(-100%);
@@ -198,17 +219,6 @@ button:hover {
         opacity: 0;
     }
 }
-
-.heart {
-    position: absolute;
-    top: -50px; /* Start above the viewport */
-    width: 50px; /* Size of the heart */
-    height: 50px; /* Size of the heart */
-    background: url('images/heart.png') no-repeat center center; /* Use a heart image */
-    background-size: contain;
-    animation: rainHearts linear infinite; /* Animation for falling */
-}
-
 /* Create multiple hearts */
 .heart:nth-child(1) { left: 10%; animation-duration: 4s; }
 .heart:nth-child(2) { left: 20%; animation-duration: 5s; }
@@ -219,6 +229,33 @@ button:hover {
 .heart:nth-child(7) { left: 70%; animation-duration: 4s; }
 .heart:nth-child(8) { left: 80%; animation-duration: 5s; }
 .heart:nth-child(9) { left: 90%; animation-duration: 6s; }
+.heart:nth-child(10) { left: 10%; animation-duration: 4s; }
+.heart:nth-child(11) { left: 20%; animation-duration: 5s; }
+.heart:nth-child(12) { left: 30%; animation-duration: 6s; }
+.heart:nth-child(13) { left: 40%; animation-duration: 4.5s; }
+.heart:nth-child(14) { left: 50%; animation-duration: 5.5s; }
+.heart:nth-child(15) { left: 60%; animation-duration: 6.5s; }
+.heart:nth-child(16) { left: 70%; animation-duration: 4s; }
+.heart:nth-child(17) { left: 80%; animation-duration: 5s; }
+.heart:nth-child(18) { left: 90%; animation-duration: 6s; }
+.heart:nth-child(19) { left: 10%; animation-duration: 4s; }
+.heart:nth-child(20) { left: 20%; animation-duration: 5s; }
+.heart:nth-child(21) { left: 30%; animation-duration: 6s; }
+.heart:nth-child(22) { left: 40%; animation-duration: 4.5s; }
+.heart:nth-child(23) { left: 50%; animation-duration: 5.5s; }
+.heart:nth-child(24) { left: 60%; animation-duration: 6.5s; }
+.heart:nth-child(25) { left: 70%; animation-duration: 4s; }
+.heart:nth-child(26) { left: 80%; animation-duration: 5s; }
+.heart:nth-child(27) { left: 90%; animation-duration: 6s; }
+.heart:nth-child(28) { left: 10%; animation-duration: 4s; }
+.heart:nth-child(29) { left: 20%; animation-duration: 5s; }
+.heart:nth-child(30) { left: 30%; animation-duration: 6s; }
+.heart:nth-child(31) { left: 40%; animation-duration: 4.5s; }
+.heart:nth-child(32) { left: 50%; animation-duration: 5.5s; }
+.heart:nth-child(33) { left: 60%; animation-duration: 6.5s; }
+.heart:nth-child(34) { left: 70%; animation-duration: 4s; }
+.heart:nth-child(35) { left: 80%; animation-duration: 5s; }
+.heart:nth-child(36) { left: 90%; animation-duration: 6s; }
 
 @keyframes rainImage {
     0% {
