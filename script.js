@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const yesPage = document.getElementById('yesPage');
     const gallerySection = document.getElementById('gallerySection');
     const container = document.querySelector('.container');
+    const hearts = document.querySelectorAll('.heart');
 
     // Handle "Yes" button click
     yesButton.addEventListener('click', function () {
@@ -44,6 +45,15 @@ document.addEventListener('DOMContentLoaded', function () {
             yesPage.classList.add('hidden'); // Hide the "Yes" page
             gallerySection.classList.add('hidden'); // Hide the gallery section
             container.classList.remove('hidden'); // Show the main container
+        });
+
+    
+        
+            hearts.forEach(heart => {
+                // Generate a random duration between 4s and 8s
+                const randomDuration = Math.random() * (8 - 4) + 4; // Random duration between 4s and 8s
+                heart.style.setProperty('--duration', `${randomDuration}s`); // Set the CSS variable
+                heart.style.left = `${Math.random() * 100}%`; // Randomize the left position
         });
     });
 });
