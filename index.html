@@ -9,7 +9,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Raining Hearts -->
+
+    <audio id="background-music" autoplay loop>
+        <source src="audio/audio.mp3" type="audio/mp3">
+        Your browser does not support the audio bebiii.
+    </audio>
+
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
     <div class="heart"></div>
     <div class="heart"></div>
     <div class="heart"></div>
@@ -25,21 +72,14 @@
     <div class="heart"></div>
     <div class="heart"></div>
 
-
-    <!-- Falling Images -->
-    <div class="falling-image"></div>
-    <div class="falling-image"></div>
-    <div class="falling-image"></div>
-    <div class="falling-image"></div>
-    <div class="falling-image"></div>
 
     <!-- Gallery Button -->
-    <button id="galleryButton" class="gallery-button">My Favorites</button>
+    <button id="galleryButton" class="gallery-button">♡</button>
 
     <!-- Main Container -->
     <div class="container">
-        <h1>Will you be my Valentine?</h1>
-        <p>Hello, I know this is so sudden haha but as I said I have a plans, and another back up plans okay? Now choose!</p>
+        <h1>Can I be your Valentine?</h1>
+        <p>Hi bebi! Surprise, I guess? Now choose anything below, I will gladly accept what's your decision! :) </p>
         <div class="buttons">
             <button id="yesButton">Yay!</button>
             <button id="noButton">Naw!! </3</button>
@@ -48,7 +88,7 @@
 
     <!-- Gallery Section -->
     <div id="gallerySection" class="hidden">
-        <h2>Favorites </h2>
+        <h2> our pics!! <3.<3 </h2>
         <div class="gallery-grid">
             <div class="gallery-card"><img src="images/1.jpg" alt="Memory 1"></div>
             <div class="gallery-card"><img src="images/2.jpg" alt="Memory 2"></div>
@@ -59,8 +99,26 @@
             <div class="gallery-card"><img src="images/7.jpg" alt="Memory 7"></div>
             <div class="gallery-card"><img src="images/8.jpg" alt="Memory 8"></div>
             <div class="gallery-card"><img src="images/9.jpg" alt="Memory 9"></div>
+            <div class="gallery-card"><img src="images/10.jpg" alt="Memory 10"></div>
+            <div class="gallery-card"><img src="images/11.jpg" alt="Memory 11"></div>
+            <div class="gallery-card"><img src="images/12.jpg" alt="Memory 12"></div>
+            <div class="gallery-card"><img src="images/13.jpg" alt="Memory 13"></div>
+            <div class="gallery-card"><img src="images/14.jpg" alt="Memory 14"></div>
+            <div class="gallery-card"><img src="images/15.jpg" alt="Memory 15"></div>
+            <div class="gallery-card"><img src="images/16.jpg" alt="Memory 16"></div>
+            <div class="gallery-card"><img src="images/17.jpg" alt="Memory 17"></div>
+            <div class="gallery-card"><img src="images/18.jpg" alt="Memory 18"></div>
+            <div class="gallery-card"><img src="images/19.jpg" alt="Memory 19"></div>
+            <div class="gallery-card"><img src="images/20.jpg" alt="Memory 20"></div>
             <!-- Add more GIFs as needed -->
         </div>
+
+        <!-- Modal for displaying the clicked image -->
+<div id="imageModal" class="modal hidden">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Zoomed Image">
+    <div id="caption"></div>
+</div> 
         <button class="back-button">Back</button>
     </div>
 
@@ -71,11 +129,15 @@
             <div class="message">
                 <h2>Yayyy, you will be my valentine! :P </h2>
                 <p style="text-align: left; display:flex; flex-direction: column; align-items: center">
-                <p>Hi bebi :)</p>
-                <p>This is my first time asking someone to be my valentine, so yup! You're my first hehe. Thank you for clicking yes I guess? :P I don't even know if I am free in 14,
-                    so maybe can we celebrate it in 15 instead? Wear whatever makes you comfortable, I am sure you will still be beautiful ! <br> <b>When: February 14 / 15, 2025</b>  <br> <b>Where:BGC</b> <br>  <b>Time: 2PM - 6PM</B>
-                 <br> <B>P.S I will hatid you pauwi, so yea don't mind the time actually. I love you so much! </B>
-                </p>
+                    <p class="justified">Hi bebi :)</p>
+                    <p class="justified">This is my first time asking someone to be my valentine, and my first time doing a website like this just for my special girl so yup! You're my first hehe. I'm so sorry if this looks minadali haha sinisingit ko lang 'to habang tulog ka sa gabi eh! :P Thank you for clicking yes I guess? :P 
+                        I don't even know if I am free in 14 bebi, but I will let you know naman agad, if hindi ako pwede that time so maybe can we celebrate it in 15 instead? I don't have that much right now but I just want to go out with you again, so maybe we can talk about it nalang once nakita mo na 'to? ^__^ Planning ipakita ko sa'yo 'to ng Friday or Saturday eh haha! 
+                        You want to try ba the Italiannis or Chilis? If you want a pasta then sa Italiannis if Chicken sa Chilis tayo? >.< But you can pick naman freely, ayun lang din ang plans ko pa hehe! Wear whatever makes you comfortable, I am sure you will still be beautiful! See you, my Valentine! ♡ <br> 
+                        <br><b>When: February 14 / 15, 2025</b>  <br> 
+                        <b>Where: BGC</b> <br>  
+                        <b>Time: 2PM - 6PM</b> <br> 
+                        <b>P.S I will hatid you pauwi, so yea don't mind the time actually hahahaha. I love you so much!</b>
+                    </p>
                 <p>Your Bebi,</p>
                 <p>Enz</p>
             </div>
@@ -86,4 +148,3 @@
     <script src="script.js"></script>
 </body>
 </html>
- 
